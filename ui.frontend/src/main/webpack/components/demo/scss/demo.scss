@@ -1,0 +1,11 @@
+.cmp-demo {
+    background-color: #f5f5f5; // Light gray background for the section
+    padding: 20px; // Padding around the section
+    border: 1px solid #ccc; // Light border around the section
+
+    &__title {
+        font-size: 25px;
+        color: rgb(105, 155, 4);
+        margin-bottom: 10px;
+    }
+}
