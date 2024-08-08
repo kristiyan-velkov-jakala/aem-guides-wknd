@@ -16,6 +16,25 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="Title"
                         name="./title"/>
+                    <colorVariation
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                        fieldLabel="Color Variation"
+                        name="./colorVariation"
+                        defaultValue="primary">
+                        <items jcr:primaryType="nt:unstructured">
+                            <primary
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/radio"
+                                text="Primary"
+                                value="primary"/>
+                            <secondary
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/radio"
+                                text="Secondary"
+                                value="secondary"/>
+                        </items>
+                    </colorVariation>
                 </items>
             </column>
         </items>
