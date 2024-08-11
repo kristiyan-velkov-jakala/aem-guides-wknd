@@ -1,0 +1,7 @@
+<div class="cmp-card container responsivegrid">
+  <div class="cmp-card__teasers">
+    <sly data-sly-list.teaser="${resource.children}">
+      <cq:include path="teaser" resourceType="wknd/components/teaser" />
+    </sly>
+  </div>
+</div>

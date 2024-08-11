@@ -1,0 +1,118 @@
+/* WKND teaser - card.less */
+
+$teaser-height: 400px;
+$teaser-img-height: $teaser-height;
+$text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+$overlay-background: rgba(0, 0, 0, 0.5);
+
+.cmp-teaser--cards {
+
+    .cmp-teaser {
+        position: relative;
+        height: $teaser-height;
+        max-height: $teaser-height;
+        overflow: hidden;
+        background-color: #ededed;
+        margin-bottom: $gutter-padding;
+        margin-top: $gutter-padding;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+
+        @media (max-width: $screen-small) {
+            width: $teaser-height;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .cmp-teaser__image {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            padding-top: 0px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+
+            .cmp-image__image {
+                object-fit: cover;
+                object-position: center;
+                height: 100%;
+                width: 100%;
+                -webkit-transition: all .2s;
+                -moz-transition: all .2s;
+                -o-transition: all .2s;
+                transition: all .25s;
+            }
+        }
+
+        .cmp-teaser__title {
+            position: relative;
+            z-index: 3;
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 1em;
+            color: #fff;
+        }
+
+        .cmp-teaser__description {
+            position: relative;
+            z-index: 3;
+            font-size: 1.5em;
+            text-align: center;
+            padding: 0 20px;
+            text-shadow: $text-shadow;
+            margin-top: 0.5em;
+        }
+
+        .cmp-teaser__action-container {
+            position: absolute;
+            bottom: $gutter-padding * 2;
+            right: $gutter-padding;
+            z-index: 4;
+        }
+
+        .cmp-teaser__action-link {
+            border: 1px solid $teaser-light-color;
+            color: $teaser-light-color;
+            background-color: transparent;
+            -webkit-transition: all .25s ease-out;
+            -moz-transition: all .25s ease-out;
+            -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+
+            &:hover {
+                color: $teaser-dark-color;
+                background-color: $brand-primary;
+                border-color: $brand-primary;
+            }
+        }
+
+        .cmp-teaser__pretitle {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0.5em;
+            color: $white;
+            background: $blue;
+            border-bottom-left-radius: 4px;
+            box-shadow: -1px 2px 4px 1px rgba(0, 0, 0, 0.25);
+            z-index: 3;
+        }
+
+        &:hover {
+            .cmp-image__image {
+                -moz-transform: scale(1.05);
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+        }
+    }
+}
