@@ -13,21 +13,13 @@ $overlay-background: rgba(0, 0, 0, 0.5);
         max-height: $teaser-height;
         overflow: hidden;
         background-color: #ededed;
-        margin-bottom: $gutter-padding;
-        margin-top: $gutter-padding;
         color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 20px;
 
-        @media (max-width: $screen-small) {
-            width: $teaser-height;
-            margin-left: auto !important;
-            margin-right: auto !important;
-        }
 
         .cmp-teaser__image {
             width: 100%;
@@ -44,10 +36,6 @@ $overlay-background: rgba(0, 0, 0, 0.5);
                 object-position: center;
                 height: 100%;
                 width: 100%;
-                -webkit-transition: all .2s;
-                -moz-transition: all .2s;
-                -o-transition: all .2s;
-                transition: all .25s;
             }
         }
 
@@ -60,6 +48,7 @@ $overlay-background: rgba(0, 0, 0, 0.5);
             text-align: center;
             margin-top: 1em;
             color: #fff;
+            text-shadow: $text-shadow;
         }
 
         .cmp-teaser__description {
@@ -69,15 +58,10 @@ $overlay-background: rgba(0, 0, 0, 0.5);
             text-align: center;
             padding: 0 20px;
             text-shadow: $text-shadow;
+            color: #fff;
             margin-top: 0.5em;
         }
 
-        .cmp-teaser__action-container {
-            position: absolute;
-            bottom: $gutter-padding * 2;
-            right: $gutter-padding;
-            z-index: 4;
-        }
 
         .cmp-teaser__action-link {
             border: 1px solid $teaser-light-color;
@@ -87,32 +71,6 @@ $overlay-background: rgba(0, 0, 0, 0.5);
             -moz-transition: all .25s ease-out;
             -o-transition: all .25s ease-out;
             transition: all .25s ease-out;
-
-            &:hover {
-                color: $teaser-dark-color;
-                background-color: $brand-primary;
-                border-color: $brand-primary;
-            }
-        }
-
-        .cmp-teaser__pretitle {
-            position: absolute;
-            top: 0;
-            right: 0;
-            padding: 0.5em;
-            color: $white;
-            background: $blue;
-            border-bottom-left-radius: 4px;
-            box-shadow: -1px 2px 4px 1px rgba(0, 0, 0, 0.25);
-            z-index: 3;
-        }
-
-        &:hover {
-            .cmp-image__image {
-                -moz-transform: scale(1.05);
-                -webkit-transform: scale(1.05);
-                transform: scale(1.05);
-            }
         }
     }
 }
