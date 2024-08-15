@@ -27,8 +27,10 @@
 @import '../components/teaser/scss/teaser.scss';
 @import '../components/text/scss/text.scss';
 @import '../components/title/scss/title.scss';
+
+/* Custom */
 @import "../components/demo/scss/demo.scss";
-@import "../components/cards-container/style/cards-container.scss";
+@import "../components/teasers-container/scss/teasers-container";
 
 /* Form */
 @import '../components/form/sign-in-form/scss/sign-in-form.scss';

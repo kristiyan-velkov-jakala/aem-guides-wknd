@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap');
+
+.cmp-teasers-container {
+    &__title {
+        font-family: "Oswald", serif;
+        font-weight: 500;
+        font-size: 2rem;
+        color: #143F59;
+        line-height: 1.2;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        margin-left: 14px;
+    }
+
+    &__description {
+        font-family: "Arimo";
+        font-size: 0.8rem;
+        color: #484542;
+        line-height: 1.5;
+        margin-bottom: 0px;
+        margin-left: 14px;
+    }
+}

@@ -1,76 +1,57 @@
-/* WKND teaser - card.less */
+.teaser {
+    margin-bottom: 20px;
+}
 
-$teaser-height: 400px;
-$teaser-img-height: $teaser-height;
-$text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-$overlay-background: rgba(0, 0, 0, 0.5);
+.cmp-teaser {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    height: 200px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-.cmp-teaser--cards {
+    &__pretitle {
+        display: none;
+    }
 
-    .cmp-teaser {
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    &__content {
         position: relative;
-        height: $teaser-height;
-        max-height: $teaser-height;
-        overflow: hidden;
-        background-color: #ededed;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        z-index: 1;
+        padding: 20px;
+    }
 
+    &__title {
+        font-family: "Oswald", serif;
+        font-weight: 500;
+        font-size: 2rem;
+        color: #ffffff;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
 
-        .cmp-teaser__image {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            padding-top: 0px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
+    &__description {
+        font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        color: #e0e0e0;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
 
-            .cmp-image__image {
-                object-fit: cover;
-                object-position: center;
-                height: 100%;
-                width: 100%;
-            }
-        }
-
-        .cmp-teaser__title {
-            position: relative;
-            z-index: 3;
-            font-size: 2.5em;
-            margin-bottom: 0.5em;
-            font-weight: bold;
-            text-align: center;
-            margin-top: 1em;
-            color: #fff;
-            text-shadow: $text-shadow;
-        }
-
-        .cmp-teaser__description {
-            position: relative;
-            z-index: 3;
-            font-size: 1.5em;
-            text-align: center;
-            padding: 0 20px;
-            text-shadow: $text-shadow;
-            color: #fff;
-            margin-top: 0.5em;
-        }
-
-
-        .cmp-teaser__action-link {
-            border: 1px solid $teaser-light-color;
-            color: $teaser-light-color;
-            background-color: transparent;
-            -webkit-transition: all .25s ease-out;
-            -moz-transition: all .25s ease-out;
-            -o-transition: all .25s ease-out;
-            transition: all .25s ease-out;
-        }
+    &__action-link {
+        display: none;
     }
 }

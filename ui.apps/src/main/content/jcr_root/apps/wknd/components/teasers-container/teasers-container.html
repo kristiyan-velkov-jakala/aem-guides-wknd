@@ -1,0 +1,15 @@
+<section class="cmp-teasers-container">
+  <sly data-sly-test="${properties['jcr:title']}">
+    <h2 class="cmp-teasers-container__title">${properties['jcr:title']}</h2>
+  </sly>
+  <sly data-sly-test="${properties['jcr:description']}">
+    <p class="cmp-teasers-container__description">
+      ${properties['jcr:description']}
+    </p>
+  </sly>
+  <div class="cmp-teasers-container__children">
+    <sly
+      data-sly-resource="${resource @ resourceType='wcm/foundation/components/responsivegrid'}"
+    ></sly>
+  </div>
+</section>
