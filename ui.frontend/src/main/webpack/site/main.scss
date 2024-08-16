@@ -27,13 +27,13 @@
 @import '../components/teaser/scss/teaser.scss';
 @import '../components/text/scss/text.scss';
 @import '../components/title/scss/title.scss';
-
-/* Custom */
-@import "../components/demo/scss/demo.scss";
-@import "../components/teasers-container/scss/teasers-container";
-
 /* Form */
 @import '../components/form/sign-in-form/scss/sign-in-form.scss';
 @import '../components/form/sign-in-buttons/scss/sign-in-buttons.scss';
 @import '../components/form/text/scss/text.scss';
 @import '../components/form/button/scss/button.scss';
+
+/* Custom */
+@import "../components/demo/scss/demo.scss";
+@import "../components/teasers-container/scss/teasers-container";
+@import "../components/teaser-card/scss/teaser-card";
