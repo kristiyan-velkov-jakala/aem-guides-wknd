@@ -1,0 +1,28 @@
+.banner-app-teaser {
+    background: rgba(0, 0, 0, 0.3);
+    min-height: 450px;
+    position: relative;
+}
+
+.cmp-teaser__title {
+    font-family: "Oswald", serif;
+    font-weight: 500;
+    font-size: 3.75rem;
+    color: #fff;
+    line-height: 1.2;
+    margin: 10px 0;
+    text-transform: uppercase;
+    z-index: 1;
+    text-align: center;
+    position: relative;
+}
+
+.cmp-teaser__description {
+    font-family: "Arimo";
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.5;
+    margin-bottom: 0px;
+    position: relative;
+    z-index: 1;
+}
