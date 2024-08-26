@@ -1,0 +1,44 @@
+<sly data-sly-use.teaser="teaser">
+  <div class="banner-app-teaser__buttons">
+    <!-- Google Play Button -->
+    <sly
+      data-sly-test="${properties.googlePlayLink && properties.googlePlayIcon}"
+    >
+      <div
+        class="banner-app-teaser__button-group banner-app-teaser__button-group--google"
+      >
+        <a
+          href="${properties.googlePlayLink @ context='uri'}"
+          target="_blank"
+          class="banner-app-teaser__link"
+        >
+          <img
+            class="banner-app-teaser__icon"
+            src="${properties.googlePlayIcon}"
+            alt="Google Play Store Icon"
+          />
+        </a>
+      </div>
+    </sly>
+    <!-- Apple Store Button -->
+    <sly
+      data-sly-test="${properties.appleStoreLink && properties.appleStoreIcon}"
+    >
+      <div
+        class="banner-app-teaser__button-group banner-app-teaser__button-group--apple"
+      >
+        <a
+          href="${properties.appleStoreLink @ context='uri'}"
+          target="_blank"
+          class="banner-app-teaser__link"
+        >
+          <img
+            class="banner-app-teaser__icon"
+            src="${properties.appleStoreIcon}"
+            alt="Apple Store Icon"
+          />
+        </a>
+      </div>
+    </sly>
+  </div>
+</sly>
